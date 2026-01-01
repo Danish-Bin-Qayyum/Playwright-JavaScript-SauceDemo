@@ -1,0 +1,10 @@
+stages:
+  - test
+
+tests:
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.36.0-jammy
+  script:
+    - npm install
+    - npx playwright install chrome
+    - npm run test:chrome

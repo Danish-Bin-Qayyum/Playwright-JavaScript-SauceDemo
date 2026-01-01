@@ -1,0 +1,534 @@
+<testsuites id="" name="" tests="20" failures="8" skipped="0" errors="0" time="281.525728">
+<testsuite name="TC_01_productPage.test.js" timestamp="2025-12-26T04:36:50.521Z" hostname="Chrome" tests="5" failures="2" skipped="0" time="79.046" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="3.564">
+<failure message="TC_01_productPage.test.js:57:7 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Chrome] › TC_01_productPage.test.js:57:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user › Verify the products page shopping cart icon and product sort container visible  
+
+    Error: Element Not Visible. Check Failed!
+
+       at ..\pages\basePage.js:119
+
+      117 | 			expect(isVisible).toBeTruthy()
+      118 | 		} catch (error) {
+    > 119 | 			throw new Error(`${errorMessage}`)
+          | 			      ^
+      120 | 		}
+      121 | 	}
+      122 |
+        at ProductsPage.isElementVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\basePage.js:119:10)
+        at ProductsPage.productSortContainerVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\productsPage.js:173:10)
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:99:6
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:95:4
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="2.767">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="4.399">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="7.057">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="61.259">
+<failure message="TC_01_productPage.test.js:229:6 Click on Twitter link and check whether user is navigated to twitter page" type="FAILURE">
+<![CDATA[  [Chrome] › TC_01_productPage.test.js:229:6 › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.waitForLoadState: Test ended.
+    =========================== logs ===========================
+      "load" event fired
+    ============================================================
+
+      244 | 		])
+      245 | 		await newPage.waitForLoadState('domcontentloaded')
+    > 246 | 		await newPage.waitForLoadState('networkidle')
+          | 		              ^
+      247 | 		expect(newPage.url()).toBe(twitterUrl)
+      248 | 	})
+      249 | })
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:246:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-6.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-4.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-3.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\test-failed-5.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="TC_01_productPage.test.js" timestamp="2025-12-26T04:36:50.521Z" hostname="Firefox" tests="5" failures="2" skipped="0" time="39.367" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="5.169">
+<failure message="TC_01_productPage.test.js:57:7 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Firefox] › TC_01_productPage.test.js:57:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user › Verify the products page shopping cart icon and product sort container visible  
+
+    Error: Element Not Visible. Check Failed!
+
+       at ..\pages\basePage.js:119
+
+      117 | 			expect(isVisible).toBeTruthy()
+      118 | 		} catch (error) {
+    > 119 | 			throw new Error(`${errorMessage}`)
+          | 			      ^
+      120 | 		}
+      121 | 	}
+      122 |
+        at ProductsPage.isElementVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\basePage.js:119:10)
+        at ProductsPage.productSortContainerVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\productsPage.js:173:10)
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:99:6
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:95:4
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\video.webm]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="4.39">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="9.922">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="9.476">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="10.41">
+<failure message="TC_01_productPage.test.js:229:6 Click on Twitter link and check whether user is navigated to twitter page" type="FAILURE">
+<![CDATA[  [Firefox] › TC_01_productPage.test.js:229:6 › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "https://twitter.com/saucelabs"
+    Received: "https://x.com/saucelabs"
+
+      245 | 		await newPage.waitForLoadState('domcontentloaded')
+      246 | 		await newPage.waitForLoadState('networkidle')
+    > 247 | 		expect(newPage.url()).toBe(twitterUrl)
+          | 		                      ^
+      248 | 	})
+      249 | })
+      250 |
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:247:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-3.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-4.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-5.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\test-failed-6.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="TC_01_productPage.test.js" timestamp="2025-12-26T04:36:50.521Z" hostname="Safari" tests="5" failures="2" skipped="0" time="38.094" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="3.923">
+<failure message="TC_01_productPage.test.js:57:7 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Safari] › TC_01_productPage.test.js:57:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user › Verify the products page shopping cart icon and product sort container visible  
+
+    Error: Element Not Visible. Check Failed!
+
+       at ..\pages\basePage.js:119
+
+      117 | 			expect(isVisible).toBeTruthy()
+      118 | 		} catch (error) {
+    > 119 | 			throw new Error(`${errorMessage}`)
+          | 			      ^
+      120 | 		}
+      121 | 	}
+      122 |
+        at ProductsPage.isElementVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\basePage.js:119:10)
+        at ProductsPage.productSortContainerVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\productsPage.js:173:10)
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:99:6
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:95:4
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Safari\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="3.528">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="6.459">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="11.084">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="13.1">
+<failure message="TC_01_productPage.test.js:229:6 Click on Twitter link and check whether user is navigated to twitter page" type="FAILURE">
+<![CDATA[  [Safari] › TC_01_productPage.test.js:229:6 › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "https://twitter.com/saucelabs"
+    Received: "https://x.com/saucelabs"
+
+      245 | 		await newPage.waitForLoadState('domcontentloaded')
+      246 | 		await newPage.waitForLoadState('networkidle')
+    > 247 | 		expect(newPage.url()).toBe(twitterUrl)
+          | 		                      ^
+      248 | 	})
+      249 | })
+      250 |
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:247:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-5.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-3.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-4.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\test-failed-6.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Safari\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="TC_01_productPage.test.js" timestamp="2025-12-26T04:36:50.521Z" hostname="Edge" tests="5" failures="2" skipped="0" time="77.643" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="2.996">
+<failure message="TC_01_productPage.test.js:57:7 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Edge] › TC_01_productPage.test.js:57:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user › Verify the products page shopping cart icon and product sort container visible  
+
+    Error: Element Not Visible. Check Failed!
+
+       at ..\pages\basePage.js:119
+
+      117 | 			expect(isVisible).toBeTruthy()
+      118 | 		} catch (error) {
+    > 119 | 			throw new Error(`${errorMessage}`)
+          | 			      ^
+      120 | 		}
+      121 | 	}
+      122 |
+        at ProductsPage.isElementVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\basePage.js:119:10)
+        at ProductsPage.productSortContainerVisible (C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\pages\productsPage.js:173:10)
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:99:6
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:95:4
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\video.webm]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage--smoke-L-be920-n-to-App-as-a-standard-user-Edge\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="3.007">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="5.615">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="5.299">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="60.726">
+<failure message="TC_01_productPage.test.js:229:6 Click on Twitter link and check whether user is navigated to twitter page" type="FAILURE">
+<![CDATA[  [Edge] › TC_01_productPage.test.js:229:6 › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.waitForLoadState: Test ended.
+    =========================== logs ===========================
+      "load" event fired
+    ============================================================
+
+      244 | 		])
+      245 | 		await newPage.waitForLoadState('domcontentloaded')
+    > 246 | 		await newPage.waitForLoadState('networkidle')
+          | 		              ^
+      247 | 		expect(newPage.url()).toBe(twitterUrl)
+      248 | 	})
+      249 | })
+        at C:\Users\Danish Bin Qayyum\Desktop\Playwright-JavaScript-SauceDemo-main\tests\TC_01_productPage.test.js:246:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-3.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-6.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-4.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\test-failed-5.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\error-context.md]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-A-a9fac-s-navigated-to-twitter-page-Edge\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
