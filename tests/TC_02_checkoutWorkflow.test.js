@@ -185,6 +185,8 @@ test.describe('Login as a standard user to complete the checkout workflow', () =
 			}
 		)
 
+
+		
 		await test.step(
 			`Click on the Finish Button and check whether User is navigated to Checkout:Complete page`,
 			async () => {
