@@ -99,7 +99,8 @@ test.describe('Login as a standard user to complete the checkout workflow', () =
 		)
 
 		await test.step(
-			`Verify all the elements on the Your Cart page and click on Checkout button`,
+			`Verify all the elements on the Your Cart page and click on Checkout button`,  
+			
 			async () => {
 				await yourCartPage.verifyLogoVisible()
 				await yourCartPage.verifyBurgerMenuButtonVisible()

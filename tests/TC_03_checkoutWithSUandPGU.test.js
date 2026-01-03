@@ -174,9 +174,9 @@ test.describe(
 					await yourCartPage.titleVisible()
 					await yourCartPage.clickContinueShoppingBtn()
 					expect(await productsPage.getUrl()).toContain(landingPageUrl)
-				}
+				}  
 			)
-
+   
 			await test.step(
 				`User adds an item to cart and cart is updated with "1" item`,
 				async () => {

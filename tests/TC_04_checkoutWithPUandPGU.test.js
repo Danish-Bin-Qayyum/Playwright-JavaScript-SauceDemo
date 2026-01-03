@@ -58,6 +58,8 @@ test.describe('Login as a Problem user to select a product item and then complet
 		checkoutYourInformationPage,
 		checkoutOverviewPage,
 		checkoutCompletePage
+
+		
 	}) => {
 		await test.step(`Open the APP and check logo`, async () => {
 			await loginPage.openApp()
